@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="page-responsive f4">
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <script>
+      (function(f,i,e,l,d,a,y){f['GoogleAnalyticsObject']=d;f[d]=f[d]||function(){
+      (f[d].q=f[d].q||[]).push(arguments)},f[d].l=1*new Date();a=i.createElement(e),
+      y=i.getElementsByTagName(e)[0];a.async=1;a.src=l;y.parentNode.insertBefore(a,y)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-3769691-88', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+
+</html>

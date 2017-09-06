@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<main class="bg-purple header" role="main">
+  <header class="container-lg p-responsive">
+    {% include header.html %}
+    <div class="pb-6 d-flex flex-items-center flex-justify-center flex-column">
+      <div class="umbrella-wrapper mb-2">
+        {% include umbrella.svg %}
+      </div>
+      {% include GitHub.svg %}
+      <code class="h1 text-white">Field Day</code>
+    </div>
+  </header>
+  {% include squiggle-white.svg %}
+</main>
+
+<div class="container-md p-responsive py-6 d-flex flex-items-center flex-justify-center flex-column mb-2">
+  <h2 class="alt-h2 lh-condensed my-3 text-center">An unconference for leaders of technical student communities</h2>
+  <p class="py-2 text-center"><strong>October 13</strong> at GitHub HQ in San Francisco as part of <a href="https://githubuniverse.com" target="_blank">GitHub Universe</a></p>
+  <h3 class="alt-h3 py-2 text-center mt-4">Register interest to get notified when tickets are live</h3>
+  <a href="http://eepurl.com/c2q1wH" class="btn btn-outline-purple">Register interest</a>
+</div>
+
+<div class="container-md mb-6 p-responsive text-center py-6 d-flex flex-items-center flex-justify-center flex-column">
+  <h2 class="alt-h2 lh-condensed mb-3 text-center">An afternoon of discussions</h2>
+  <p class="alt-h3 mb-3 text-center">Field Day brings together a group of student leaders for an afternoon of conversation in the form of lightning talks, discussions, games, or whatever suits the topic best.</p>
+
+  <div class="event-imgs mx-auto my-4">
+    <img class="rounded-1" src="{{ site.baseurl }}/assets/pictures/1.png" />
+    <img class="rounded-1" src="{{ site.baseurl }}/assets/pictures/2.png" />
+    <img class="rounded-1" src="{{ site.baseurl }}/assets/pictures/3.png" />
+    <img class="rounded-1" src="{{ site.baseurl }}/assets/pictures/4.png" />
+  </div>
+</div>
+
+<div class="container-md p-responsive py-6" id="schedule">
+  <h1 class="text-center">Schedule</h1>
+  <p class="alt-h3 mb-3 text-center">Schedule to be confirmed</p>
+
+  <table class="data-table">
+    <tbody>
+      <tr><td><time>12:00</time></td><td>Lunch</td></tr>
+      <tr><td><time>13:00</time></td><td>Welcome to Field Day</td></tr>
+      <tr><td><time>14:15</time></td><td>Breakout Discussions I</td></tr>
+      <tr><td><time>14:45</time></td><td>Breakout Discussions II</td></tr>
+      <tr><td><time>15:30</time></td><td>Campus Expert Fireside Chat</td></tr>
+      <tr><td><time>16:30</time></td><td>Breakout Discussions III</td></tr>
+      <tr><td><time>17:00</time></td><td>Breakout Discussions IV</td></tr>
+      <tr><td><time>17:35</time></td><td>Feedback Round</td></tr>
+      <tr><td><time>18:00</time></td><td>Closing Remarks</td></tr>
+      <tr><td><time>18:45</time></td><td>Dinner</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container-lg mb-6 p-responsive py-6 d-flex flex-items-center flex-sm-justify-between flex-justify-center text-center text-sm-left" id="venue">
+  <address class="addr mono">
+    <h2 class="alt-h2 lh-condensed mb-2">GitHub HQ</h3>
+    88 Colin P Kelly Jr Street</br>
+    San Francisco, CA 94107
+  </address>
+  <div class="map-container">
+    <iframe
+      width="600"
+      height="450"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDS02MdHUUV8zVPriYlLsYIK4CvIoUcq8&q=88+Colin+P=Kelly+Jr+San+Francisco" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<div class="py-6 p-responsive mt-2 bg-gray-light" id="faq">
+  <div class="container-md">
+    <h3 class="text-center">FAQ</h3>
+
+    {% for faq in site.faqs %}
+      <div class="py-3" id="{{ faq.q | slugify }}">
+        <h4 class="mb-1"><a href="#{{ faq.q | slugify }}" class="text-purple">{{faq.q}}</a></h4>
+        <p>{{ faq.a }}</p>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: GitHub Field Day
+description: > # this means to ignore newlines until "baseurl:"
+  An unconference for leaders of technical student communities. October 13 at GitHub HQ in SF.
+date: 2017-10-13T07:00:00.000Z
+url: "http://githubfieldday.com" # the base hostname & protocol for your site
+exclude: [
+  'node_modules',
+  'gulpfile.babel.js',
+  'package-lock.json',
+  'package.json',
+  'README.md'
+]
+baseurl: '/universe2017'
+
+faqs:
+  - q: Who can attend Field Day?
+    a: Field Day is for student leaders of technical communities all around the world who are currently in the Bay Area for internships or similar summer activities. Most attendees will be undergraduate students.
+  - q: What's a student leader?
+    a: A student leader is someone who's actively involved in improving their local technical community. They might be the president or chairperson of their school's tech club or be one of the organizers of the annual hackathon. They might run the student hardware group or be actively involved in introducing other students to programming.
+  - q: What's an unconference?
+    a: A loosely structured conference emphasizing the informal exchange of information and ideas between participants (to quote the Google definition). Most content at Field Day will be in the form of lightning talks and discussions conducted by attendees.
+  - q: I'm not in the Bay Area, but this sounds cool! Can I come?
+    a: This event does have a focus on the Bay Area, but you're welcome to make your own way to San Francisco and join us! Also keep an eye on your inbox for emails from GitHub Education. There's more to come!
+  - q: How much does Field Day cost?
+    a: Field Day is free to attend!
+  - q: Will there be food?
+    a: Yes! We'll have a light breakfast, and a full lunch and dinner! You will not go hungry.
+  - q: Is the venue wheelchair accessible?
+    a: Yes!
+  - q: Is there a Code of Conduct for this event?
+    a: Yes! You can view it <a href="coc/" class="text-purple">here.</a>
+  - q: Who is organizing Field Day?
+    a: Field Day is organized by full time students/current interns on the GitHub Education team.
+
+# Build settings
+markdown: kramdown
+
+permalink: :categories/:title/
