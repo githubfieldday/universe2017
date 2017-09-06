@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/githubfieldday/site.git"
+    "url": "git+https://github.com/githubfieldday/universe2017.git"
   },
   "author": "Jason Etcovitch",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/githubfieldday/site/issues"
+    "url": "https://github.com/githubfieldday/universe2017/issues"
   },
-  "homepage": "https://github.com/githubfieldday/site#readme",
+  "homepage": "http://githubfieldday/universe2017",
   "dependencies": {
     "autoprefixer": "^7.1.1",
     "babel-core": "^6.24.1",
